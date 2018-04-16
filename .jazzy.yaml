@@ -1,0 +1,6 @@
+module: MetovaJSONCodable
+github_url: https://github.com/metova/MetovaJSONCodable
+clean: true
+theme: fullwidth
+xcodebuild_arguments: [-workspace, MetovaJSONCodable.xcworkspace, -scheme, MetovaJSONCodable]
+output: docs
