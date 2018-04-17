@@ -144,7 +144,7 @@ class MetovaJSONCodableTests: XCTestCase {
         XCTAssertEqual(encodedJson["testOptional"] as? String, "optional")
         XCTAssertEqual(encodedJson["testEnum"] as? String, "testMatch")
         
-        let testNoMatch = Test(testID: 3, email: "test@test.com",testOptional: "optional", testEnum: TestStringEnum.testNoMatch)
+        let testNoMatch = Test(testID: 3, email: "test@test.com", testOptional: "optional", testEnum: TestStringEnum.testNoMatch)
         
         guard var encodedJsonNoMatch = testNoMatch.jsonValue else {
             XCTFail("Failed to encode Test Object")

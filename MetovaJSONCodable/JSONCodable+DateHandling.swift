@@ -126,5 +126,3 @@ public extension JSONCustomDateFormatterEncodable {
         return encoder
     }
 }
-
-

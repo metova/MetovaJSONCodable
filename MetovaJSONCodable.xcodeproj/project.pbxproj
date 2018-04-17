@@ -13,6 +13,7 @@
 		6A09D0E5207D313200A533F4 /* JSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A09D0E4207D313200A533F4 /* JSONCodable.swift */; };
 		6A1DFAD6207FE51E000030B7 /* CustomChildProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1DFAD5207FE51E000030B7 /* CustomChildProtocolTests.swift */; };
 		6A1DFAD8207FF622000030B7 /* JSONCodable+DateHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1DFAD7207FF622000030B7 /* JSONCodable+DateHandling.swift */; };
+		872D0241C6AE071C2DD2C4A0 /* Pods_MetovaJSONCodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473B8516E9F9A6037368EF74 /* Pods_MetovaJSONCodable.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0283A8B3D48AD73268688401 /* Pods-MetovaJSONCodable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetovaJSONCodable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetovaJSONCodable/Pods-MetovaJSONCodable.debug.xcconfig"; sourceTree = "<group>"; };
+		473B8516E9F9A6037368EF74 /* Pods_MetovaJSONCodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetovaJSONCodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A09D0A6207D2B7D00A533F4 /* MetovaJSONCodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MetovaJSONCodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A09D0A9207D2B7D00A533F4 /* MetovaJSONCodable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetovaJSONCodable.h; sourceTree = "<group>"; };
 		6A09D0AA207D2B7D00A533F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +49,8 @@
 		6A1DFAD2207E9DC6000030B7 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = SOURCE_ROOT; };
 		6A1DFAD5207FE51E000030B7 /* CustomChildProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChildProtocolTests.swift; sourceTree = "<group>"; };
 		6A1DFAD7207FF622000030B7 /* JSONCodable+DateHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONCodable+DateHandling.swift"; sourceTree = "<group>"; };
+		6A1DFADB20867813000030B7 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C3097CF7AB7C4DADB16071A4 /* Pods-MetovaJSONCodable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetovaJSONCodable.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetovaJSONCodable/Pods-MetovaJSONCodable.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				872D0241C6AE071C2DD2C4A0 /* Pods_MetovaJSONCodable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +80,8 @@
 				6A09D0B3207D2B7D00A533F4 /* MetovaJSONCodableTests */,
 				6A09D0E8207D3DEA00A533F4 /* RelatedFiles */,
 				6A09D0A7207D2B7D00A533F4 /* Products */,
+				F50100D763C3530FB1BFF566 /* Pods */,
+				EDF1BBE9B447BBB313030D29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +118,7 @@
 		6A09D0E8207D3DEA00A533F4 /* RelatedFiles */ = {
 			isa = PBXGroup;
 			children = (
+				6A1DFADB20867813000030B7 /* Podfile */,
 				6A09D0EC207D780C00A533F4 /* Gemfile */,
 				6A09D0EA207D780B00A533F4 /* Gemfile.lock */,
 				6A09D0F0207D785D00A533F4 /* .gitignore */,
@@ -123,6 +132,23 @@
 				6A1DFAD2207E9DC6000030B7 /* .swift-version */,
 			);
 			path = RelatedFiles;
+			sourceTree = "<group>";
+		};
+		EDF1BBE9B447BBB313030D29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				473B8516E9F9A6037368EF74 /* Pods_MetovaJSONCodable.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F50100D763C3530FB1BFF566 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0283A8B3D48AD73268688401 /* Pods-MetovaJSONCodable.debug.xcconfig */,
+				C3097CF7AB7C4DADB16071A4 /* Pods-MetovaJSONCodable.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +169,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A09D0BA207D2B7D00A533F4 /* Build configuration list for PBXNativeTarget "MetovaJSONCodable" */;
 			buildPhases = (
+				6A33958437680C6700EBCEA6 /* [CP] Check Pods Manifest.lock */,
 				6A09D0A1207D2B7D00A533F4 /* Sources */,
+				6A1DFADC20867854000030B7 /* ShellScript */,
 				6A09D0A2207D2B7D00A533F4 /* Frameworks */,
 				6A09D0A3207D2B7D00A533F4 /* Headers */,
 				6A09D0A4207D2B7D00A533F4 /* Resources */,
@@ -228,6 +256,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A1DFADC20867854000030B7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" autocorrect && \"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		6A33958437680C6700EBCEA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MetovaJSONCodable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A09D0A1207D2B7D00A533F4 /* Sources */ = {
@@ -381,6 +443,7 @@
 		};
 		6A09D0BB207D2B7D00A533F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0283A8B3D48AD73268688401 /* Pods-MetovaJSONCodable.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -408,6 +471,7 @@
 		};
 		6A09D0BC207D2B7D00A533F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3097CF7AB7C4DADB16071A4 /* Pods-MetovaJSONCodable.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";

@@ -1,4 +1,4 @@
-[MetovaJSONCodable](https://cocoapods.org/pods/MetovaJSONCodable)
+# [MetovaJSONCodable](https://cocoapods.org/pods/MetovaJSONCodable)
 
 <p align="center">
 <a href="https://travis-ci.org/metova/MetovaJSONCodable" target="_blank"><img src="https://travis-ci.org/metova/MetovaJSONCodable.svg?branch=master" alt="Build Status"></a> 
@@ -52,15 +52,91 @@ struct Token: JSONCodable {
 #### JSON
 
 ```swift
-let tokenJSON: JSON =
-    [
+let tokenJSON: JSON = [
     "testID": 1,
     "email": "test@email.com",
     "authenticationToken": "token"
-    ]
+]
     
 let token = Token(from: tokenJSON)
 ```
+
+#### Custom Date Handling
+
+This pod comes with several child protocols for handling json with custom date formats
+
+#### Time interval since reference date
+
+```
+struct Token: JSONEpochDateCodable {
+    var tokenID: Int
+    var email: String
+    var authenticationToken: String
+    var expirationDate: Date
+}
+
+let tokenJSON: JSON = [
+    "tokenID": 1,
+    "email": "test@email.com",
+    "authenticationToken": "token",
+    "expirationDate": 1523560533
+]
+    
+let token = Token(from: tokenJSON)
+    
+// token.expirationDate is a Date equaling 2018-04-12 19:15:33 +0000
+```
+
+#### Custom Date foramatter object
+
+We also have a child protocol for supporting a custom date formatter. Here you will need to implement a dateFormatter computed variable that returns a date formatter in order to conform to the protocol
+
+```
+struct Token: JSONCustomDateFormatterCodable {
+    var testID: Int
+    var email: String
+    var expirationDate: Date
+
+    static var dateFormatter: DateFormatter {
+
+        let dateFormatter = DateFormatter()
+        dateFormatter.calendar = Calendar(identifier: .iso8601)
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSXXXXX"
+        return dateFormatter
+    }
+}
+
+let validTestJSONISO8601: JSON = [
+    "testID": 2,
+    "email": "test@email.com",
+    "expirationDate": "2016-12-31T17:56:27.000Z"
+]
+
+let token = Token(from: tokenJSON)
+
+// token.expirationDate is a Date equaling 2016-12-31 17:56:27 +0000
+```
+
+#### Custom Child Protocols
+
+If you want to define your own date formatting strategy or some other permutation to the default coder/decoder, you simply need to make a child protocol and implement your own ecoder/coder
+
+```
+public protocol JSONDecodeableIOS8601: JSONDecodable {}
+
+public extension JSONDecodeableIOS8601 {
+
+    static var jsonDecoder: JSONDecoder {
+
+    let decoder = JSONDecoder()
+    decoder.dateDecodingStrategy = .iso8601
+    return decoder
+    }
+}
+```
+
 
 ## Documentation
 
