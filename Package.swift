@@ -11,6 +11,6 @@ let package = Package(
         .testTarget(
             name: "MetovaJSONCodableTests",
             dependencies: ["MetovaJSONCodable"],
-            path: "MetovaJSONCodableTests"),
+            path: "MetovaJSONCodableTests")
     ]
 )

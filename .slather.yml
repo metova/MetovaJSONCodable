@@ -1,5 +1,6 @@
 coverage_service: coveralls
 xcodeproj: MetovaJSONCodable.xcodeproj
+workspace: MetovaJSONCodable.xcworkspace
 scheme: MetovaJSONCodable
 ignore:
 # No ignores for now
