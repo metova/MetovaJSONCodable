@@ -17,6 +17,7 @@ MetovaJSONCodable is a lightweight Codable protocol with addtional support for J
 - [Usage](#usage)
     - [Object example](#object-example)
     - [JSON](#json)
+    - [Custom Date Handling](#custom-date-handling)
 - [Documentation](#documentation)
 - [Credits](#credits)
 - [License](#license)

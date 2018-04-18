@@ -14,6 +14,7 @@
 		6A1DFAD6207FE51E000030B7 /* CustomChildProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1DFAD5207FE51E000030B7 /* CustomChildProtocolTests.swift */; };
 		6A1DFAD8207FF622000030B7 /* JSONCodable+DateHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1DFAD7207FF622000030B7 /* JSONCodable+DateHandling.swift */; };
 		872D0241C6AE071C2DD2C4A0 /* Pods_MetovaJSONCodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473B8516E9F9A6037368EF74 /* Pods_MetovaJSONCodable.framework */; };
+		F9341A3ACC2F4F2EBFF5FF0D /* Pods_MetovaJSONCodableTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 649A02521344692877B07BDE /* Pods_MetovaJSONCodableTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		0283A8B3D48AD73268688401 /* Pods-MetovaJSONCodable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetovaJSONCodable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetovaJSONCodable/Pods-MetovaJSONCodable.debug.xcconfig"; sourceTree = "<group>"; };
 		473B8516E9F9A6037368EF74 /* Pods_MetovaJSONCodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetovaJSONCodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		649A02521344692877B07BDE /* Pods_MetovaJSONCodableTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetovaJSONCodableTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A09D0A6207D2B7D00A533F4 /* MetovaJSONCodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MetovaJSONCodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A09D0A9207D2B7D00A533F4 /* MetovaJSONCodable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetovaJSONCodable.h; sourceTree = "<group>"; };
 		6A09D0AA207D2B7D00A533F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +52,8 @@
 		6A1DFAD5207FE51E000030B7 /* CustomChildProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChildProtocolTests.swift; sourceTree = "<group>"; };
 		6A1DFAD7207FF622000030B7 /* JSONCodable+DateHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONCodable+DateHandling.swift"; sourceTree = "<group>"; };
 		6A1DFADB20867813000030B7 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6D5DAAA9CAE09939CB389D87 /* Pods-MetovaJSONCodableTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetovaJSONCodableTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetovaJSONCodableTests/Pods-MetovaJSONCodableTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7AD02926FC73B59F06DE829A /* Pods-MetovaJSONCodableTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetovaJSONCodableTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetovaJSONCodableTests/Pods-MetovaJSONCodableTests.release.xcconfig"; sourceTree = "<group>"; };
 		C3097CF7AB7C4DADB16071A4 /* Pods-MetovaJSONCodable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetovaJSONCodable.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetovaJSONCodable/Pods-MetovaJSONCodable.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A09D0B0207D2B7D00A533F4 /* MetovaJSONCodable.framework in Frameworks */,
+				F9341A3ACC2F4F2EBFF5FF0D /* Pods_MetovaJSONCodableTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				473B8516E9F9A6037368EF74 /* Pods_MetovaJSONCodable.framework */,
+				649A02521344692877B07BDE /* Pods_MetovaJSONCodableTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -147,6 +153,8 @@
 			children = (
 				0283A8B3D48AD73268688401 /* Pods-MetovaJSONCodable.debug.xcconfig */,
 				C3097CF7AB7C4DADB16071A4 /* Pods-MetovaJSONCodable.release.xcconfig */,
+				6D5DAAA9CAE09939CB389D87 /* Pods-MetovaJSONCodableTests.debug.xcconfig */,
+				7AD02926FC73B59F06DE829A /* Pods-MetovaJSONCodableTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -189,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A09D0BD207D2B7D00A533F4 /* Build configuration list for PBXNativeTarget "MetovaJSONCodableTests" */;
 			buildPhases = (
+				8916D9F47B205E6EDF637CF3 /* [CP] Check Pods Manifest.lock */,
 				6A09D0AB207D2B7D00A533F4 /* Sources */,
 				6A09D0AC207D2B7D00A533F4 /* Frameworks */,
 				6A09D0AD207D2B7D00A533F4 /* Resources */,
@@ -283,6 +292,24 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-MetovaJSONCodable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8916D9F47B205E6EDF637CF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MetovaJSONCodableTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -447,21 +474,19 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MetovaJSONCodable/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Metova.MetovaJSONCodable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -475,21 +500,19 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MetovaJSONCodable/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Metova.MetovaJSONCodable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -498,15 +521,12 @@
 		};
 		6A09D0BE207D2B7D00A533F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D5DAAA9CAE09939CB389D87 /* Pods-MetovaJSONCodableTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MetovaJSONCodableTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Metova.MetovaJSONCodableTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -516,15 +536,12 @@
 		};
 		6A09D0BF207D2B7D00A533F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AD02926FC73B59F06DE829A /* Pods-MetovaJSONCodableTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MetovaJSONCodableTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Metova.MetovaJSONCodableTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
