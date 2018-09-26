@@ -48,7 +48,6 @@
 		6A09D0F0207D785D00A533F4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		6A1DFAD0207E9D5E000030B7 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		6A1DFAD1207E9D77000030B7 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
-		6A1DFAD2207E9DC6000030B7 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = SOURCE_ROOT; };
 		6A1DFAD5207FE51E000030B7 /* CustomChildProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChildProtocolTests.swift; sourceTree = "<group>"; };
 		6A1DFAD7207FF622000030B7 /* JSONCodable+DateHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONCodable+DateHandling.swift"; sourceTree = "<group>"; };
 		6A1DFADB20867813000030B7 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -92,7 +91,6 @@
 				6A09D0EF207D784800A533F4 /* LICENSE */,
 				6A09D0E6207D3AB700A533F4 /* Package.swift */,
 				6A1DFAD1207E9D77000030B7 /* .travis.yml */,
-				6A1DFAD2207E9DC6000030B7 /* .swift-version */,
 			);
 			name = "Related Files";
 			sourceTree = "<group>";
