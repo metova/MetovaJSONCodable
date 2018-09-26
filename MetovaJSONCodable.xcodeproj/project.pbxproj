@@ -78,12 +78,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A4F8DEB215BDF1D00E3461C /* Related Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A1DFADB20867813000030B7 /* Podfile */,
+				6A09D0EC207D780C00A533F4 /* Gemfile */,
+				6A09D0EA207D780B00A533F4 /* Gemfile.lock */,
+				6A09D0F0207D785D00A533F4 /* .gitignore */,
+				6A1DFAD0207E9D5E000030B7 /* .swiftlint.yml */,
+				6A09D0EB207D780C00A533F4 /* CHANGELOG.md */,
+				6A09D0EE207D780C00A533F4 /* README.md */,
+				6A09D0ED207D780C00A533F4 /* MetovaJSONCodable.podspec */,
+				6A09D0EF207D784800A533F4 /* LICENSE */,
+				6A09D0E6207D3AB700A533F4 /* Package.swift */,
+				6A1DFAD1207E9D77000030B7 /* .travis.yml */,
+				6A1DFAD2207E9DC6000030B7 /* .swift-version */,
+			);
+			name = "Related Files";
+			sourceTree = "<group>";
+		};
 		6A09D09C207D2B7D00A533F4 = {
 			isa = PBXGroup;
 			children = (
 				6A09D0A8207D2B7D00A533F4 /* MetovaJSONCodable */,
 				6A09D0B3207D2B7D00A533F4 /* MetovaJSONCodableTests */,
-				6A09D0E8207D3DEA00A533F4 /* RelatedFiles */,
+				4A4F8DEB215BDF1D00E3461C /* Related Files */,
 				6A09D0A7207D2B7D00A533F4 /* Products */,
 				F50100D763C3530FB1BFF566 /* Pods */,
 				EDF1BBE9B447BBB313030D29 /* Frameworks */,
@@ -118,25 +137,6 @@
 				6A09D0B6207D2B7D00A533F4 /* Info.plist */,
 			);
 			path = MetovaJSONCodableTests;
-			sourceTree = "<group>";
-		};
-		6A09D0E8207D3DEA00A533F4 /* RelatedFiles */ = {
-			isa = PBXGroup;
-			children = (
-				6A1DFADB20867813000030B7 /* Podfile */,
-				6A09D0EC207D780C00A533F4 /* Gemfile */,
-				6A09D0EA207D780B00A533F4 /* Gemfile.lock */,
-				6A09D0F0207D785D00A533F4 /* .gitignore */,
-				6A1DFAD0207E9D5E000030B7 /* .swiftlint.yml */,
-				6A09D0EB207D780C00A533F4 /* CHANGELOG.md */,
-				6A09D0EE207D780C00A533F4 /* README.md */,
-				6A09D0ED207D780C00A533F4 /* MetovaJSONCodable.podspec */,
-				6A09D0EF207D784800A533F4 /* LICENSE */,
-				6A09D0E6207D3AB700A533F4 /* Package.swift */,
-				6A1DFAD1207E9D77000030B7 /* .travis.yml */,
-				6A1DFAD2207E9DC6000030B7 /* .swift-version */,
-			);
-			path = RelatedFiles;
 			sourceTree = "<group>";
 		};
 		EDF1BBE9B447BBB313030D29 /* Frameworks */ = {
@@ -483,7 +483,11 @@
 				INFOPLIST_FILE = MetovaJSONCodable/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Metova.MetovaJSONCodable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -509,7 +513,11 @@
 				INFOPLIST_FILE = MetovaJSONCodable/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Metova.MetovaJSONCodable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -526,7 +534,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MetovaJSONCodableTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Metova.MetovaJSONCodableTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -541,7 +553,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MetovaJSONCodableTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Metova.MetovaJSONCodableTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
