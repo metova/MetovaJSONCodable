@@ -16,7 +16,7 @@ MetovaJSONCodable is a simple protocol implemented on top of the existing codabl
   s.ios.deployment_target = "10.0"
   s.swift_version = "4.2"
 
-  s.source       = { :git => "https://github.com/metova/MetovaJSONCodable.git", :tag => s.tag.to_s }
+  s.source       = { :git => "https://github.com/metova/MetovaJSONCodable.git", :tag => s.version.to_s }
   s.source_files  = "MetovaJSONCodable/*.swift"
 
 end
