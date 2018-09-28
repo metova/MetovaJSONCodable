@@ -24,7 +24,7 @@ MetovaJSONCodable is a lightweight Codable protocol with addtional support for J
 
 ## Requirements
 
-- Swift 4.0
+- Swift 4.2
 - iOS 9+
 
 ## Installation
@@ -131,9 +131,9 @@ public extension JSONDecodeableIOS8601 {
 
     static var jsonDecoder: JSONDecoder {
 
-    let decoder = JSONDecoder()
-    decoder.dateDecodingStrategy = .iso8601
-    return decoder
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        return decoder
     }
 }
 ```

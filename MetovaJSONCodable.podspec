@@ -8,11 +8,15 @@ MetovaJSONCodable is a simple protocol implemented on top of the existing codabl
                    DESC
   s.homepage     = "https://github.com/metova/MetovaJSONCodable"
   s.license      = "MIT"
-  s.author       = { "Kalan Stowe" => "kalan.stowe@metova.com" }
+  s.authors      = {
+    "Kalan Stowe" => "kalan.stowe@metova.com",
+    "Nick Griffith" => "nick.griffith@metova.com"
+  }
 
   s.ios.deployment_target = "10.0"
+  s.swift_version = "4.2"
 
-  s.source       = { :git => "https://github.com/metova/MetovaJSONCodable.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/metova/MetovaJSONCodable.git", :tag => s.version.to_s }
   s.source_files  = "MetovaJSONCodable/*.swift"
 
 end
